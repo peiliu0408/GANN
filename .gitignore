@@ -1,0 +1,20 @@
+# training outputs (checkpoints, logs, predictions)
+log_*/
+runs/
+runs_official/
+checkpoint_backup/
+
+# data (87GB, see readme.txt for layout)
+data/
+
+# python
+__pycache__/
+*.pyc
+*.pth
+
+# misc
+nohup.out
+*.log
+
+# macOS
+.DS_Store

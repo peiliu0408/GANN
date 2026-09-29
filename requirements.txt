@@ -1,0 +1,12 @@
+# Runtime requirements (GPU machine)
+# Install:  pip install -r requirements.txt
+torch>=1.10            # CUDA build required
+numpy
+tqdm
+
+# Metrics:
+#   BLEU / ROUGE-L / CIDEr-D  -> pure Python, always available.
+#   METEOR / SPICE            -> need a Java runtime (JRE/JDK 8+).
+#   Install Java (e.g. `apt install default-jre` or `conda install openjdk`)
+#   and make sure `java -version` works. Without Java these two metrics are
+#   skipped automatically; all other metrics are unaffected.

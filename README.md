@@ -35,12 +35,12 @@ bash test.sh ckpt test                          # final test numbers
 
 The `ckpt/` folder in this repo contains the best model's `opt.json` plus
 ready-made prediction files — but **not** the weights (`model-best.pth`,
-~300 MB, too large for git). Download the checkpoint archive from the link in
-§6 and unpack it so that `model-best.pth` lands in `ckpt/`:
+286 MB, too large for git). Download `model-best.pth` from the shared folder
+in §6 and put it into `ckpt/`:
 
 ```
 ckpt/
-├── model-best.pth    <- from the §6 download
+├── model-best.pth    <- downloaded from §6
 └── opt.json
 ```
 
@@ -151,12 +151,14 @@ Reference results (MS-COCO Karpathy test, this exact recipe, seed 43):
 ## 6. Large-file downloads
 
 `data.tar` and the model weights (`model-best.pth`) are too large for git —
-download them from the shared links below:
+download both from the shared OneDrive folder:
 
-| File | Size | Link |
+**[GANN — OneDrive shared folder](https://1drv.ms/f/c/94a9f528230586fe/IgA0wgMW6I_FTZL2rxXbhsrYAaq9-gD2C-cIE1k5crT6lqA?e=fo7OUY)**
+
+| File | Size | Where to put it |
 |---|---|---|
-| `data.tar` (unpack at repo root -> `data/`) | 85.2 GiB (91,461,242,880 bytes) | `PLACEHOLDER_UPDATE_BEFORE_RELEASE` |
-| checkpoint archive (unpack -> `ckpt/model-best.pth`) | ~300 MB | `PLACEHOLDER_UPDATE_BEFORE_RELEASE` |
+| `data.tar` | 85.2 GB | repo root, then `tar -xf data.tar` (creates `data/`, see §3) |
+| `model-best.pth` | 286 MB | `ckpt/model-best.pth` |
 
 ## 7. Repository layout
 

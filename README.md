@@ -128,7 +128,7 @@ loading the checkpoint or a GPU (runs in seconds):
 
 ```bash
 python3 scripts/rescore.py ckpt/preds_test_greedy.json
-python3 scripts/rescore.py ckpt/preds_test_xe.json
+python3 scripts/rescore.py ckpt/preds_test_scst.json
 # optionally save the metrics to a file:
 python3 scripts/rescore.py <preds.json> --out score.json
 ```
@@ -146,7 +146,7 @@ Reference results (MS-COCO Karpathy test, this exact recipe, seed 43):
 | Predictions file | Decoding | B-1 | B-4 | ROUGE-L | CIDEr-D |
 |---|---|---|---|---|---|
 | `ckpt/preds_test_greedy.json` | greedy | 80.02 | 38.56 | 58.50 | 123.97 |
-| `ckpt/preds_test_xe.json` | greedy | 80.61 | 40.05 | 59.24 | **129.52** |
+| `ckpt/preds_test_scst.json` | greedy | 80.61 | 40.05 | 59.24 | **129.52** |
 
 ## 6. Large-file downloads
 

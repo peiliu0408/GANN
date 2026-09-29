@@ -1,6 +1,6 @@
 """Rescore an existing predictions JSON without loading the model.
 
-  python scripts/rescore.py ckpt/preds_test_greedy.json
+  python scripts/rescore.py ckpt/preds_test_xe.json
   python scripts/rescore.py preds.json --out score.json # also save metrics json
 """
 import argparse
